@@ -7,6 +7,10 @@ public class MeuPrimeiroPrograma {
             sum(x,y);
         }else if(args[0].equals("subtrair")) {
             minus(x,y);
+        }else if (args[0].equals("dividir")) {
+            divide(x,y);
+        }else if (args[0].equals("multiplicar")) {
+            multiple(x,y);
         }
     }
 
@@ -17,5 +21,14 @@ public class MeuPrimeiroPrograma {
     static void minus(int x, int y) {
         System.out.println(x - y);
     }
+
+    static void divide(int x, int y) {
+        System.out.println(x / y);
+    }
+
+    static void multiple(int x, int y) {
+        System.out.println(x * y);
+    }
+
 }
 
