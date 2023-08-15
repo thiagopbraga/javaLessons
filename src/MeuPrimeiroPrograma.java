@@ -3,14 +3,11 @@ public class MeuPrimeiroPrograma {
         int x = Integer.parseInt(args[1]);
         int y = Integer.parseInt(args[2]);
 
-        if(args[0].equals("somar")) {
-            sum(x,y);
-        }else if(args[0].equals("subtrair")) {
-            minus(x,y);
-        }else if (args[0].equals("dividir")) {
-            divide(x,y);
-        }else if (args[0].equals("multiplicar")) {
-            multiple(x,y);
+        switch (args[0]) {
+            case "somar" -> sum(x, y);
+            case "subtrair" -> minus(x, y);
+            case "dividir" -> divide(x, y);
+            case "multiplicar" -> multiple(x, y);
         }
     }
 
@@ -22,13 +19,11 @@ public class MeuPrimeiroPrograma {
         System.out.println(x - y);
     }
 
-    static void divide(int x, int y) {
+    static void divide( int x, int y) {
         System.out.println(x / y);
     }
 
-    static void multiple(int x, int y) {
+    static void multiple( int x, int y) {
         System.out.println(x * y);
     }
-
 }
-
