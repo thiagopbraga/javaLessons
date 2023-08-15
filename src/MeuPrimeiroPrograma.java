@@ -1,29 +1,13 @@
+import java.util.Random;
+
 public class MeuPrimeiroPrograma {
     public static void main(String[] args) {
-        int x = Integer.parseInt(args[1]);
-        int y = Integer.parseInt(args[2]);
-
-        switch (args[0]) {
-            case "somar" -> sum(x, y);
-            case "subtrair" -> minus(x, y);
-            case "dividir" -> divide(x, y);
-            case "multiplicar" -> multiple(x, y);
+        int x;
+        Random generate = new Random();
+        int i;
+        for(i=0;i<6;i++){
+            int number = generate.nextInt(60);
+            System.out.println(number);
         }
-    }
-
-    static void sum(int x, int y) {
-        System.out.println(x + y);
-    }
-
-    static void minus(int x, int y) {
-        System.out.println(x - y);
-    }
-
-    static void divide( int x, int y) {
-        System.out.println(x / y);
-    }
-
-    static void multiple( int x, int y) {
-        System.out.println(x * y);
     }
 }
